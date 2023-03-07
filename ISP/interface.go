@@ -1,9 +1,10 @@
 package isp
 
-type Command interface {
+type ICommand interface {
 	Execute()
 }
 
-type CommandWithInput interface {
+type ICommandWithInput interface {
+	ICommand
 	HandleInput()
 }
